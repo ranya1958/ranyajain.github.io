@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ranya Jain | Data Science & Ecology</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Ranya Jain</div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Data Science × Ecology & Evolutionary Biology</p>
+          <h1>Hi, I’m Ranya.</h1>
+          <p class="hero-text">
+            I’m an undergraduate at Northeastern University exploring how data,
+            computation, and fieldwork can help us understand and protect
+            marine and coastal ecosystems.
+          </p>
+          <div class="hero-actions">
+            <!-- TODO: update href to your CV link when ready -->
+            <a class="btn primary" href="#" target="_blank" rel="noreferrer">View CV (coming soon)</a>
+            <a class="btn secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="two-column">
+          <p>
+            I’m a second-year student at Northeastern University, combining
+            <strong>Data Science</strong> with
+            <strong>Ecology &amp; Evolutionary Biology</strong>. My work sits at
+            the intersection of <strong>quantitative analysis</strong> and
+            <strong>marine conservation</strong>—from species distribution and
+            climate impacts to genomic tools for restoration.
+          </p>
+          <div class="highlight-card">
+            <h3>Research interests</h3>
+            <ul>
+              <li>Marine ecology &amp; coastal restoration</li>
+              <li>Genomics &amp; population structure (e.g., oysters)</li>
+              <li>Species distribution &amp; climate-driven change</li>
+              <li>Applied data science and visualization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <h2>Research</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Eastern Oyster Genomics &amp; Local Adaptation</h3>
+            <p class="card-meta">Lotterhos Lab · Northeastern University</p>
+            <p>
+              Working with genomic and environmental data to investigate
+              patterns of local adaptation in <em>Crassostrea virginica</em>,
+              including synteny analysis, qPCR, and visualization workflows.
+            </p>
+            <p class="tag-row">
+              <span class="tag">Genomics</span>
+              <span class="tag">R / Python</span>
+              <span class="tag">Synteny</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Marine Conservation &amp; Mangrove Restoration</h3>
+            <p class="card-meta">Blue Crew · UAE &amp; Community Partners</p>
+            <p>
+              Founded a student-led marine conservation initiative focused on
+              mangrove planting, monitoring, and STEM outreach to connect
+              younger students with coastal ecosystems.
+            </p>
+            <p class="tag-row">
+              <span class="tag">Fieldwork</span>
+              <span class="tag">Outreach</span>
+              <span class="tag">Coastal ecosystems</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Environmental Data &amp; Climate-Related Modeling</h3>
+            <p class="card-meta">Course &amp; Independent Projects</p>
+            <p>
+              Projects spanning wildfire cause prediction, SST anomaly
+              analysis, and ecological data visualization, using machine
+              learning and statistics to explore environmental questions.
+            </p>
+            <p class="tag-row">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Climate</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>FitFlow: Health &amp; Fitness Data Platform</h3>
+            <p class="card-meta">CS / Data Science Project</p>
+            <p>
+              Designed and built a relational database and full-stack app for
+              trainers, clients, and analysts to log workouts, track health
+              metrics, and audit system events via role-based dashboards.
+            </p>
+            <ul class="card-list">
+              <li>MySQL schema, ERD, and RESTful Flask API</li>
+              <li>Streamlit dashboards for different personas</li>
+              <li>Emphasis on data integrity and observability</li>
+            </ul>
+            <p class="tag-row">
+              <span class="tag">Flask</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Streamlit</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Wildfire Cause Prediction</h3>
+            <p class="card-meta">Data Science Coursework</p>
+            <p>
+              Modeled wildfire causes using environmental covariates, comparing
+              linear models and tree-based methods, and evaluating performance
+              across multiple metrics.
+            </p>
+            <p class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Regression / Trees</span>
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Science Communication &amp; Outreach</h3>
+            <p class="card-meta">Letters to a Pre-Scientist &amp; Workshops</p>
+            <p>
+              Ongoing outreach work that translates complex marine and
+              environmental science into accessible stories and activities for
+              younger students.
+            </p>
+            <p class="tag-row">
+              <span class="tag">Outreach</span>
+              <span class="tag">Science communication</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience &amp; Leadership</h2>
+        <div class="two-column">
+          <ul class="timeline">
+            <li>
+              <h3>Undergraduate Researcher · Lotterhos Lab</h3>
+              <p class="timeline-meta">Northeastern University</p>
+              <p>
+                Genomics and environmental data analysis focused on eastern
+                oysters and coastal systems.
+              </p>
+            </li>
+            <li>
+              <h3>Founder · Marine Conservation Club</h3>
+              <p class="timeline-meta">Blue Crew</p>
+              <p>
+                Organized mangrove planting events, monitoring, and STEM
+                outreach activities centered on marine ecosystems.
+              </p>
+            </li>
+            <li>
+              <h3>Data Science &amp; Computing Coursework</h3>
+              <p class="timeline-meta">Northeastern University</p>
+              <p>
+                Projects in databases, machine learning, scientific computing,
+                and environmental applications.
+              </p>
+            </li>
+          </ul>
+          <div class="highlight-card">
+            <h3>What I’m looking for</h3>
+            <p>
+              I’m excited about opportunities that connect data, ecology, and
+              real-world impact—whether that’s research, fieldwork, or
+              technical collaborations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          The best way to reach me is by email. I’m always happy to talk about
+          marine science, data, or potential collaborations.
+        </p>
+        <div class="contact-links">
+          <!-- TODO: replace with your actual email & profiles -->
+          <a href="mailto:your.email@northeastern.edu" class="contact-link">
+            your.email@northeastern.edu
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="contact-link">
+            LinkedIn
+          </a>
+          <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("nav-open");
+      });
+    }
+
+    // Set current year
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
+</body>
+</html>
