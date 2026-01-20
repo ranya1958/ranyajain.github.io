@@ -1,31 +1,28 @@
 :root {
-  --bg-main: #f7f9f8;        /* warm off-white */
-  --bg-alt: #eef3f1;         /* pale green-grey */
+  --bg-main: #f7f9f8;
+  --bg-alt: #eef3f1;
   --bg-hero: #f4faf8;
 
   --surface: #ffffff;
   --surface-soft: #f1f5f4;
 
-  --text-main: #0f172a;      /* deep slate */
-  --text-muted: #64748b;     /* cool muted */
+  --text-main: #0f172a;
+  --text-muted: #475569;
   --text-soft: #94a3b8;
 
-  --accent: #0ea5a4;         /* teal-cyan (energy) */
-  --accent-strong: #0f766e;  /* deeper teal */
-  --accent-soft: #ccfbf1;    /* very light teal */
+  --accent: #0ea5a4;
+  --accent-strong: #0f766e;
+  --accent-soft: #ccfbf1;
 
   --border-subtle: #d1d5db;
-  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.09);
+  --shadow-soft: 0 10px 28px rgba(15, 23, 42, 0.08);
 
   --radius-lg: 16px;
   --radius-xl: 22px;
-
   --max-width: 980px;
 }
 
-/* =========================================================
-   Base Reset
-   ========================================================= */
+/* ===== Reset ===== */
 
 *,
 *::before,
@@ -35,17 +32,11 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   color: var(--text-main);
   background-color: var(--bg-main);
   -webkit-font-smoothing: antialiased;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 a {
@@ -57,225 +48,181 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Typography */
+p {
+  line-height: 1.7;
+}
+
+/* ===== Typography ===== */
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Sora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: "Space Grotesk", system-ui, sans-serif;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
   color: var(--text-main);
 }
 
-p {
-  line-height: 1.7;
+.hero-title {
+  letter-spacing: 0.035em;
 }
 
-/* Layout */
+/* ===== Layout ===== */
 
 .container {
-  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .section {
-  padding: 3.5rem 0;
+  padding: 3.6rem 0;
 }
 
-/* =========================================================
-   Header & Navigation
-   ========================================================= */
+.two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  gap: 2rem;
+}
+
+/* ===== Header ===== */
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 20;
   background-color: rgba(248, 250, 249, 0.96);
-  border-bottom: 1px solid rgba(209, 213, 219, 0.75);
-  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  backdrop-filter: blur(10px);
 }
 
 .nav-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0.85rem 1.5rem;
 }
 
 .brand {
-  font-family: "Sora", system-ui, sans-serif;
-  font-size: 1.05rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent-strong);
+  font-size: 0.95rem;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.1rem;
+  gap: 1.2rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  font-size: 0.9rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  font-weight: 500;
 }
 
 .nav-links a:hover {
   color: var(--accent-strong);
 }
 
-/* =========================================================
-   Hero – energy / systems / data
-   ========================================================= */
+/* ===== Hero ===== */
 
 .hero {
   background:
-    linear-gradient(
-      115deg,
-      rgba(14, 165, 164, 0.12),
-      rgba(8, 145, 178, 0.03)
-    ),
+    linear-gradient(115deg, rgba(14, 165, 164, 0.15), rgba(8, 145, 178, 0.03)),
     var(--bg-hero);
-  border-bottom: 1px solid rgba(209, 213, 219, 0.7);
+  border-bottom: 1px solid var(--border-subtle);
   padding: 4rem 0 3.2rem;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 3.2fr) minmax(0, 2.2fr);
-  gap: 2.4rem;
+  grid-template-columns: minmax(0, 3.3fr) minmax(0, 2.1fr);
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero-kicker {
-  font-family: "Sora", system-ui, sans-serif;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.72rem;
   color: var(--text-soft);
-  margin-bottom: 0.8rem;
-}
-
-.hero-title {
-  font-size: clamp(2.3rem, 3vw + 1.5rem, 3rem);
-  margin: 0 0 0.85rem;
-}
-
-.hero-title span {
-  color: var(--accent-strong);
+  margin-bottom: 0.9rem;
 }
 
 .hero-text {
-  font-size: 0.98rem;
   max-width: 34rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
 }
 
 .hero-actions {
-  margin-top: 1.6rem;
+  margin-top: 1.7rem;
   display: flex;
-  flex-wrap: wrap;
   gap: 0.9rem;
 }
 
 .hero-aside {
-  position: relative;
-  padding: 1.6rem 1.8rem 1.4rem 1.5rem;
-  border-radius: var(--radius-xl);
   background: var(--surface);
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 1.6rem 1.7rem;
   box-shadow: var(--shadow-soft);
-  overflow: hidden;
-}
-
-.hero-aside::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(14, 165, 164, 0.12),
-      transparent 50%
-    );
-  pointer-events: none;
 }
 
 .hero-aside h3 {
-  margin: 0 0 0.4rem;
-  font-size: 0.98rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
   color: var(--text-soft);
-}
-
-.hero-aside p {
-  font-size: 0.9rem;
-  color: var(--text-main);
+  margin-bottom: 0.6rem;
 }
 
 .hero-aside ul {
-  margin: 0.85rem 0 0;
   padding-left: 1.1rem;
   font-size: 0.9rem;
   color: var(--text-muted);
 }
 
-/* Buttons */
+/* ===== Buttons ===== */
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.6rem;
   border-radius: 999px;
-  padding: 0.6rem 1.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
   border: 1px solid transparent;
   cursor: pointer;
-  background-color: transparent;
-  font-family: "Sora", system-ui, sans-serif;
 }
 
 .button-primary {
   background: linear-gradient(135deg, #0ea5a4, #0891b2);
   color: #ecfeff;
-  box-shadow: 0 10px 28px rgba(8, 47, 73, 0.35);
-}
-
-.button-primary:hover {
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 14px 38px rgba(8, 47, 73, 0.45);
+  box-shadow: 0 10px 26px rgba(8, 47, 73, 0.35);
 }
 
 .button-ghost {
-  border-color: rgba(148, 163, 184, 0.7);
+  border-color: var(--border-subtle);
+  background: #ffffff;
   color: var(--text-main);
-  background-color: rgba(248, 250, 249, 0.9);
 }
 
-.button-ghost:hover {
-  border-color: var(--accent-strong);
-  text-decoration: none;
-}
-
-/* =========================================================
-   Generic Surfaces & Layout Blocks
-   ========================================================= */
+/* ===== Surfaces ===== */
 
 .surface {
-  background-color: var(--surface);
+  background: var(--surface);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
@@ -285,193 +232,59 @@ p {
 .surface-soft {
   background: linear-gradient(135deg, var(--surface-soft), var(--bg-alt));
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(209, 213, 219, 0.8);
-  padding: 1.5rem 1.7rem;
+  padding: 1.6rem;
+  border: 1px solid var(--border-subtle);
 }
 
-.two-column {
-  display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
-  gap: 1.8rem;
-  align-items: flex-start;
-}
-
-.section-header {
-  margin-bottom: 1.8rem;
-}
-
-/* =========================================================
-   Tags, Pills, Meta
-   ========================================================= */
-
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.9rem;
-}
-
-.tag {
-  font-size: 0.72rem;
-  font-family: "Sora", system-ui, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.11em;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.8);
-  background-color: #f8fafc;
-  color: var(--text-soft);
-}
-
-.pill-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.9rem;
-  font-size: 0.85rem;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  background-color: var(--accent-soft);
-  color: var(--accent-strong);
-  font-family: "Sora", system-ui, sans-serif;
-}
-
-.pill-link:hover {
-  text-decoration: none;
-}
-
-/* =========================================================
-   Projects Grid
-   ========================================================= */
+/* ===== Projects ===== */
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.7rem;
-}
-
-.project-card h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1.05rem;
+  gap: 1.8rem;
 }
 
 .project-meta {
-  font-size: 0.78rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
   color: var(--text-soft);
   margin-bottom: 0.5rem;
 }
 
-.project-card p {
-  font-size: 0.9rem;
-  color: var(--text-main);
-}
-
-/* =========================================================
-   Contact
-   ========================================================= */
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-  font-size: 0.93rem;
-}
-
-.contact-list li {
+.project-card h3 {
+  font-size: 1.05rem;
   margin-bottom: 0.5rem;
 }
 
-/* =========================================================
-   Footer
-   ========================================================= */
+.pill-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+/* ===== Footer ===== */
 
 .site-footer {
-  padding: 1.5rem 0 2rem;
+  padding: 1.6rem 0 2.2rem;
   font-size: 0.8rem;
   color: var(--text-soft);
   text-align: center;
 }
 
-/* =========================================================
-   Project Pages
-   ========================================================= */
-
-.page-hero {
-  padding: 2.8rem 0 1.6rem;
-  background:
-    linear-gradient(to right, rgba(14, 165, 164, 0.2), transparent 40%),
-    var(--bg-main);
-  border-bottom: 1px solid rgba(209, 213, 219, 0.7);
-}
-
-.page-hero h1 {
-  margin-bottom: 0.4rem;
-}
-
-.page-subtitle {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.page-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 3.3fr) minmax(0, 2.1fr);
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-
-.meta-block {
-  font-size: 0.86rem;
-  color: var(--text-muted);
-}
-
-.meta-block h3 {
-  font-size: 0.95rem;
-  margin-top: 0;
-}
-
-.meta-list {
-  list-style: none;
-  padding: 0;
-  margin: 0.4rem 0 0;
-}
-
-.meta-list li {
-  margin-bottom: 0.3rem;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.85rem;
-  margin-top: 1.1rem;
-}
-
-/* =========================================================
-   Responsive
-   ========================================================= */
+/* ===== Responsive ===== */
 
 @media (max-width: 800px) {
   .hero-inner,
-  .two-column,
-  .page-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero {
-    padding-top: 3rem;
-  }
-
-  .nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.4rem;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
+  .two-column {
+    grid-template-columns: 1fr;
   }
 }
