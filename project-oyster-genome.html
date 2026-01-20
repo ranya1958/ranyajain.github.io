@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Oyster Genome Misassembly Visualization | Ranya Jain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">Ranya Jain</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Visualization of Genome Misassembly in the Eastern Oyster</h1>
+        <p class="page-subtitle">
+          Synteny-based workflows to diagnose structural issues in
+          <em>Crassostrea virginica</em> assemblies.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container page-layout">
+        <article class="surface">
+          <h2>Overview</h2>
+          <p>
+            In this project, I developed Python scripts to generate synteny plots
+            for the eastern oyster genome using linkage map positions. By comparing
+            the order of markers along linkage groups to their positions on genome
+            scaffolds, I identified candidate regions of misassembly.
+          </p>
+          <p>
+            I created complementary Circos and Sankey-style visualizations to show
+            how segments of chromosomes aligned (or failed to align) between the
+            map and the assembly. These views make it easier to spot scaffold
+            inversions, translocations, and potential mis-joins that may require
+            reassembly or manual curation.
+          </p>
+          <p>
+            The workflow sits within broader efforts to achieve chromosome-level
+            structural accuracy for <em>Crassostrea virginica</em> and to interpret
+            local adaptation signals in the context of a reliable genome.
+          </p>
+
+          <p class="tag-row">
+            <a class="pill-link" href="#">
+              View figures / notebook (coming soon)
+            </a>
+          </p>
+        </article>
+
+        <aside class="surface-soft meta-block">
+          <h3>Details</h3>
+          <ul class="meta-list">
+            <li><strong>Type:</strong> Genomic visualization</li>
+            <li><strong>System:</strong> Eastern oyster (<em>Crassostrea virginica</em>)</li>
+            <li><strong>Tools:</strong> Python, plotting libraries, linkage maps</li>
+            <li><strong>Focus:</strong> Synteny, scaffold–linkage group alignment, misassembly detection</li>
+          </ul>
+
+          <div class="tag-row" style="margin-top: 0.9rem;">
+            <span class="tag">Genomics</span>
+            <span class="tag">Synteny</span>
+            <span class="tag">Visualization</span>
+          </div>
+
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Ranya Jain
+    </div>
+  </footer>
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
