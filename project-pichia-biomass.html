@@ -2,20 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pichia Biomass &amp; Glucose | Ranya Jain</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pichia pastoris Biomass &amp; Glucose | Ranya Jain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-inner">
-      <div class="brand">Ranya&nbsp;Jain</div>
+      <a href="index.html" class="brand">Ranya Jain</a>
       <nav>
-        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
         <ul class="nav-links">
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#projects">Projects
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Effect of Glucose Concentration on Pichia pastoris Biomass</h1>
+        <p class="page-subtitle">
+          Exploring growth and inhibition across a gradient of glucose media.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container page-layout">
+        <article class="surface">
+          <h2>Overview</h2>
+          <p>
+            In this project, I explored how different glucose concentrations affect
+            the biomass yield of <em>Pichia pastoris</em>, a yeast widely used in
+            industrial biotechnology. Using OD<sub>600</sub> measurements over 24
+            hours, I tracked growth across media ranging from 2% to 30% glucose.
+          </p>
+          <p>
+            The results showed that beyond a certain threshold, higher glucose
+            levels actually inhibited growth, likely due to osmotic stress and
+            metabolic saturation. This aligns with the idea that “more substrate” is
+            not always better in bioprocessing contexts.
+          </p>
+          <p>
+            The project sharpened my interest in sustainable bioprocess optimization
+            and taught me a lot about designing controlled experiments, analyzing
+            microbial growth data, and thinking about how lab-scale results might
+            translate to industrial bioreactors.
+          </p>
+
+          <p class="tag-row">
+            <a class="pill-link" href="#">
+              Download report (PDF)
+            </a>
+          </p>
+        </article>
+
+        <aside class="surface-soft meta-block">
+          <h3>Details</h3>
+          <ul class="meta-list">
+            <li><strong>Type:</strong> Microbiology / bioprocessing</li>
+            <li><strong>Organism:</strong> <em>Pichia pastoris</em></li>
+            <li><strong>Methods:</strong> OD<sub>600</sub> growth curves, glucose gradient</li>
+            <li><strong>Theme:</strong> Substrate optimization, growth inhibition</li>
+          </ul>
+
+          <div class="tag-row" style="margin-top: 0.9rem;">
+            <span class="tag">Bioprocess</span>
+            <span class="tag">Microbiology</span>
+            <span class="tag">Growth curves</span>
+          </div>
+
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Ranya Jain
+    </div>
+  </footer>
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
