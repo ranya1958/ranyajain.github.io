@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ocean Memory Timescale Analysis | Ranya Jain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container two-col">
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> · <a href="index.html#projects">Projects</a> · Ocean Memory
+          </div>
+          <h1>Ocean Memory Timescale Analysis</h1>
+          <p class="project-meta">
+            CESM1 · daily SST · 1980–2020 · Python/xarray · autoregressive modeling
+          </p>
+          <div class="project-body">
+            <p>
+              In this project, I analyzed CESM1 high-resolution daily sea surface
+              temperature (SST) data from 1980–2020 to explore the “memory” of the
+              upper ocean. Using Python/xarray, I first detrended the SST time
+              series to isolate internal variability, then applied autoregressive
+              modeling (AR(1)) to estimate thermal memory timescales.
+            </p>
+            <p>
+              These memory estimates help us understand how long surface
+              temperature anomalies persist, which has implications for
+              predictability, marine heatwaves, and how different regions respond
+              to climate forcing. I’m especially interested in how memory varies
+              across basins and along western boundary currents, where dynamical
+              processes are intense.
+            </p>
+            <p>
+              This project strengthened my comfort with working on large climate
+              datasets, translating “ocean memory” from a conceptual idea into
+              something you can actually compute and visualize pixel by pixel.
+            </p>
+          </div>
+        </div>
+        <aside class="project-aside">
+          <h3>Details</h3>
+          <ul style="margin:0.4rem 0 0; padding-left:1.1rem;">
+            <li>Dataset: CESM1 high-resolution daily SST (1980–2020)</li>
+            <li>Tools: Python, xarray, NumPy, Matplotlib</li>
+            <li>Methods: detrending, AR(1) fitting, spatial mapping of timescales</li>
+          </ul>
+          <p style="margin-top:0.9rem; font-size:0.88rem;">
+            <!-- TODO: add link to PDF / notebook when ready -->
+            You can eventually link a PDF write-up or Jupyter notebook here.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    }
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
