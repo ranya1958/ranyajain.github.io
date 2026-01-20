@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Polylactic Acid Degradation | Ranya Jain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container two-col">
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> · <a href="index.html#projects">Projects</a> · PLA Degradation
+          </div>
+          <h1>Effect of Temperature on Chemical Recycling of Polylactic Acid</h1>
+          <p class="project-meta">
+            Green chemistry · PLA hydrolysis · ethanol–NaOH · colorimetry
+          </p>
+          <div class="project-body">
+            <p>
+              This project was a hands-on investigation into how temperature
+              influences the chemical breakdown of polylactic acid (PLA), a
+              biodegradable polymer. Using a simple ethanol–NaOH solution and
+              colorimetry, I tested lactic acid production at four temperatures
+              (40&nbsp;°C to 80&nbsp;°C) to observe trends in PLA hydrolysis.
+            </p>
+            <p>
+              While the experiment had clear limitations—short reaction times,
+              relatively coarse temperature control, and some measurement
+              error—it taught me a lot about designing and adjusting protocols,
+              dealing with error, and working with green chemistry concepts in
+              real life.
+            </p>
+            <p>
+              Beyond the actual results, this project made me more interested in
+              sustainable materials and how experimental chemistry plays out
+              beyond theory: how practical constraints, messy data, and small
+              design choices shape what you can conclude.
+            </p>
+          </div>
+        </div>
+        <aside class="project-aside">
+          <h3>Details</h3>
+          <ul style="margin:0.4rem 0 0; padding-left:1.1rem;">
+            <li>Polymer: polylactic acid (PLA)</li>
+            <li>Conditions: 40–80&nbsp;°C, ethanol–NaOH solution</li>
+            <li>Measurements: colorimetric estimation of lactic acid</li>
+            <li>Focus: temperature–rate trends, experimental design</li>
+          </ul>
+          <p style="margin-top:0.9rem; font-size:0.88rem;">
+            <!-- TODO: add link to lab report PDF -->
+            You can upload the full lab report as a PDF and link it here.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    }
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
