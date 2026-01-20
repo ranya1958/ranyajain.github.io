@@ -8,21 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">Ranya Jain</div>
-      <nav class="nav">
-        <button class="nav-toggle" aria-label="Toggle navigation">
-          ☰
-        </button>
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -32,224 +29,242 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero-content">
+      <div class="container hero-inner">
         <div>
-          <p class="eyebrow">Data Science × Ecology & Evolutionary Biology</p>
-          <h1>Hi, I’m Ranya.</h1>
-          <p class="hero-text">
-            I’m an undergraduate at Northeastern University exploring how data,
-            computation, and fieldwork can help us understand and protect
-            marine and coastal ecosystems.
+          <p class="hero-tag">Data Science × Ecology &amp; Evolutionary Biology</p>
+          <h1>Marine systems, climate, and data-driven stories.</h1>
+          <p class="hero-sub">
+            I’m an undergraduate at Northeastern University exploring how ocean
+            change, ecological interactions, and genomics can be understood
+            through quantitative tools. I like when code, fieldwork, and policy
+            questions all sit at the same table.
           </p>
-          <div class="hero-actions">
-            <!-- TODO: update href to your CV link when ready -->
-            <a class="btn primary" href="#" target="_blank" rel="noreferrer">View CV (coming soon)</a>
-            <a class="btn secondary" href="#contact">Get in touch</a>
+          <div class="btn-row">
+            <!-- TODO: Update this once you have a CV link -->
+            <a href="#" class="btn btn-primary">CV (coming soon)</a>
+            <a href="#projects" class="btn btn-outline">Browse projects</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <div class="two-column">
+        <aside class="hero-card">
+          <h2>Current interests</h2>
+          <p class="hero-meta">
+            Climate impacts · ocean memory · kelp ecosystems · genomics · waste &amp; policy
+          </p>
           <p>
-            I’m a second-year student at Northeastern University, combining
-            <strong>Data Science</strong> with
-            <strong>Ecology &amp; Evolutionary Biology</strong>. My work sits at
-            the intersection of <strong>quantitative analysis</strong> and
-            <strong>marine conservation</strong>—from species distribution and
-            climate impacts to genomic tools for restoration.
+            Recently, I’ve been working on eastern oyster genome synteny,
+            ocean thermal memory timescales, and how management decisions
+            ripple through kelp forests and waste systems. This site is a
+            place to collect those projects as they grow.
           </p>
-          <div class="highlight-card">
-            <h3>Research interests</h3>
-            <ul>
-              <li>Marine ecology &amp; coastal restoration</li>
-              <li>Genomics &amp; population structure (e.g., oysters)</li>
-              <li>Species distribution &amp; climate-driven change</li>
-              <li>Applied data science and visualization</li>
-            </ul>
-          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p class="lede">
+            I’m a combined Data Science &amp; Ecology &amp; Evolutionary Biology major,
+            interested in how we can use quantitative tools to understand and
+            protect marine and coastal ecosystems. My work so far spans
+            ocean–climate interactions, kelp forest dynamics, waste systems,
+            and genome assembly.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Research &amp; technical themes</h3>
+          <ul style="margin: 0.4rem 0 0; padding-left: 1.1rem; font-size: 0.9rem;">
+            <li>Ocean memory &amp; sea surface temperature dynamics</li>
+            <li>Marine ecology &amp; kelp forest resilience</li>
+            <li>Genome assembly, synteny, and population genetics</li>
+            <li>Environmental data analysis &amp; visualization (Python)</li>
+            <li>Policy-adjacent work: waste, management, and interventions</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Research Section -->
-    <section id="research" class="section section-alt">
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
       <div class="container">
-        <h2>Research</h2>
-        <div class="card-grid">
+        <h2>Projects &amp; Papers</h2>
+        <p class="lede" style="color:#cbd5f5;">
+          Each project has its own page with more detail, figures, and (when
+          appropriate) the full paper or report.
+        </p>
+
+        <div class="project-grid">
           <article class="card">
-            <h3>Eastern Oyster Genomics &amp; Local Adaptation</h3>
-            <p class="card-meta">Lotterhos Lab · Northeastern University</p>
+            <p class="card-meta">Ocean–Climate · Python · xarray</p>
+            <h3>Ocean Memory Timescale Analysis</h3>
             <p>
-              Working with genomic and environmental data to investigate
-              patterns of local adaptation in <em>Crassostrea virginica</em>,
-              including synteny analysis, qPCR, and visualization workflows.
+              Analyzed CESM1 high-resolution daily sea surface temperature
+              (SST) from 1980–2020 to quantify thermal memory via detrending
+              and autoregressive modeling.
             </p>
-            <p class="tag-row">
-              <span class="tag">Genomics</span>
-              <span class="tag">R / Python</span>
-              <span class="tag">Synteny</span>
+            <div class="tag-row">
+              <span class="tag">SST</span><span class="tag">AR(1)</span><span class="tag">CESM1</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-ocean-memory.html">View project →</a>
             </p>
           </article>
 
           <article class="card">
-            <h3>Marine Conservation &amp; Mangrove Restoration</h3>
-            <p class="card-meta">Blue Crew · UAE &amp; Community Partners</p>
+            <p class="card-meta">Waste &amp; Policy · Python</p>
+            <h3>Global Waste Analysis</h3>
             <p>
-              Founded a student-led marine conservation initiative focused on
-              mangrove planting, monitoring, and STEM outreach to connect
-              younger students with coastal ecosystems.
+              Country-level analysis of GDP, population, waste composition, and
+              MSW generation to identify national-scale drivers of waste output.
             </p>
-            <p class="tag-row">
-              <span class="tag">Fieldwork</span>
-              <span class="tag">Outreach</span>
-              <span class="tag">Coastal ecosystems</span>
+            <div class="tag-row">
+              <span class="tag">Sustainability</span><span class="tag">Regression</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-global-waste.html">View project →</a>
             </p>
           </article>
 
           <article class="card">
-            <h3>Environmental Data &amp; Climate-Related Modeling</h3>
-            <p class="card-meta">Course &amp; Independent Projects</p>
+            <p class="card-meta">Green Chemistry</p>
+            <h3>Polylactic Acid Degradation</h3>
             <p>
-              Projects spanning wildfire cause prediction, SST anomaly
-              analysis, and ecological data visualization, using machine
-              learning and statistics to explore environmental questions.
+              Experimental work on temperature-dependent chemical recycling of
+              PLA in ethanol–NaOH, using colorimetry to track lactic acid.
             </p>
-            <p class="tag-row">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Data Visualization</span>
-              <span class="tag">Climate</span>
+            <div class="tag-row">
+              <span class="tag">PLA</span><span class="tag">Green chemistry</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-pla-degradation.html">View project →</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-meta">Bioprocess · Microbiology</p>
+            <h3>Glucose &amp; Pichia Biomass Yield</h3>
+            <p>
+              OD-based growth curves across 2–30% glucose to study how high
+              sugar concentrations shape <em>Pichia pastoris</em> biomass.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Biotech</span><span class="tag">Osmotic stress</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-pichia-biomass.html">View project →</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-meta">Marine Ecology · Review</p>
+            <h3>Tasmania Kelp Ecosystem Depletion</h3>
+            <p>
+              Review and analysis of kelp decline, urchin overgrazing, and
+              management via lobster translocation and urchin culling.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Kelp forests</span><span class="tag">CSIRO/IMAS</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-tasmania-kelp.html">View project →</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-meta">Genomics · Visualization</p>
+            <h3>Eastern Oyster Genome Misassembly</h3>
+            <p>
+              Synteny, Circos, and Sankey visualizations to flag possible
+              misassemblies in the <em>Crassostrea virginica</em> genome.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Synteny</span><span class="tag">Genome assembly</span>
+            </div>
+            <p style="margin-top:0.9rem;">
+              <a href="project-oyster-misassembly.html">View project →</a>
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>FitFlow: Health &amp; Fitness Data Platform</h3>
-            <p class="card-meta">CS / Data Science Project</p>
-            <p>
-              Designed and built a relational database and full-stack app for
-              trainers, clients, and analysts to log workouts, track health
-              metrics, and audit system events via role-based dashboards.
-            </p>
-            <ul class="card-list">
-              <li>MySQL schema, ERD, and RESTful Flask API</li>
-              <li>Streamlit dashboards for different personas</li>
-              <li>Emphasis on data integrity and observability</li>
-            </ul>
-            <p class="tag-row">
-              <span class="tag">Flask</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Streamlit</span>
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Wildfire Cause Prediction</h3>
-            <p class="card-meta">Data Science Coursework</p>
-            <p>
-              Modeled wildfire causes using environmental covariates, comparing
-              linear models and tree-based methods, and evaluating performance
-              across multiple metrics.
-            </p>
-            <p class="tag-row">
-              <span class="tag">Python</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">Regression / Trees</span>
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Science Communication &amp; Outreach</h3>
-            <p class="card-meta">Letters to a Pre-Scientist &amp; Workshops</p>
-            <p>
-              Ongoing outreach work that translates complex marine and
-              environmental science into accessible stories and activities for
-              younger students.
-            </p>
-            <p class="tag-row">
-              <span class="tag">Outreach</span>
-              <span class="tag">Science communication</span>
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <h2>Experience &amp; Leadership</h2>
-        <div class="two-column">
-          <ul class="timeline">
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Experience</h2>
+          <ul class="experience-list">
             <li>
-              <h3>Undergraduate Researcher · Lotterhos Lab</h3>
-              <p class="timeline-meta">Northeastern University</p>
-              <p>
-                Genomics and environmental data analysis focused on eastern
-                oysters and coastal systems.
+              <p class="experience-title">
+                Undergraduate Researcher · Eastern Oyster Genomics
+              </p>
+              <p class="experience-meta">Lotterhos Lab · Northeastern University</p>
+              <p class="experience-text">
+                Working with linkage maps, synteny plots, and environmental data
+                to understand genome structure and adaptation in coastal systems.
               </p>
             </li>
             <li>
-              <h3>Founder · Marine Conservation Club</h3>
-              <p class="timeline-meta">Blue Crew</p>
-              <p>
-                Organized mangrove planting events, monitoring, and STEM
-                outreach activities centered on marine ecosystems.
+              <p class="experience-title">
+                Marine Conservation &amp; Outreach
+              </p>
+              <p class="experience-meta">Blue Crew &amp; community partners</p>
+              <p class="experience-text">
+                Led mangrove planting and monitoring events, and developed
+                STEM-focused outreach around marine ecosystems.
               </p>
             </li>
             <li>
-              <h3>Data Science &amp; Computing Coursework</h3>
-              <p class="timeline-meta">Northeastern University</p>
-              <p>
-                Projects in databases, machine learning, scientific computing,
-                and environmental applications.
+              <p class="experience-title">
+                Data Science &amp; Computational Projects
+              </p>
+              <p class="experience-meta">Coursework &amp; independent work</p>
+              <p class="experience-text">
+                Projects in databases, machine learning, climate data, and
+                environmental applications, including FitFlow, wildfire models,
+                and SST anomaly analyses.
               </p>
             </li>
           </ul>
-          <div class="highlight-card">
-            <h3>What I’m looking for</h3>
-            <p>
-              I’m excited about opportunities that connect data, ecology, and
-              real-world impact—whether that’s research, fieldwork, or
-              technical collaborations.
-            </p>
-          </div>
         </div>
+        <aside class="card">
+          <h3>What I’m excited about</h3>
+          <p style="font-size:0.92rem; line-height:1.7;">
+            I’m especially interested in work that sits between field ecology,
+            computation, and decision-making: genomics-informed restoration,
+            climate impacts on marine systems, and data tools that make complex
+            environmental stories legible to people who make policy or live
+            with the consequences.
+          </p>
+        </aside>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <p>
-          The best way to reach me is by email. I’m always happy to talk about
-          marine science, data, or potential collaborations.
-        </p>
-        <div class="contact-links">
-          <!-- TODO: replace with your actual email & profiles -->
-          <a href="mailto:your.email@northeastern.edu" class="contact-link">
-            your.email@northeastern.edu
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="contact-link">
-            LinkedIn
-          </a>
-          <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link">
-            GitHub
-          </a>
+        <div class="contact-block">
+          <p>
+            The easiest way to reach me is by email. I’m always happy to talk
+            about marine science, data, or potential collaborations.
+          </p>
+          <div class="contact-links">
+            <!-- TODO: replace with your real info -->
+            <a href="mailto:your.email@northeastern.edu" class="contact-link">
+              your.email@northeastern.edu
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" class="contact-link">
+              LinkedIn
+            </a>
+            <a href="https://github.com" target="_blank" rel="noreferrer" class="contact-link">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -268,11 +283,11 @@
 
     if (navToggle && navLinks) {
       navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("nav-open");
+        navLinks.classList.toggle("open");
       });
     }
 
-    // Set current year
+    // Year
     const yearSpan = document.getElementById("year");
     if (yearSpan) {
       yearSpan.textContent = new Date().getFullYear();
