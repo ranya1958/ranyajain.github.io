@@ -3,253 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranya Jain | Data, Ecology & Energy Systems</title>
+  <title>Ranya Jain | Energy, Environment & Data Systems</title>
 
-  <!-- Fonts: Lato (body) + Sora (headings) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a href="index.html" class="brand">Ranya Jain</a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">Ranya Jain</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-kicker">
+          Data science · energy · environmental systems
+        </div>
+        <h1 class="hero-title">
+          Quantifying <span style="color:var(--accent-strong)">complex systems</span>
+          at the intersection of climate, ecology, and data.
+        </h1>
+        <p class="hero-text">
+          I’m an undergraduate at Northeastern University studying Data Science and
+          Ecology &amp; Evolutionary Biology. My work focuses on environmental and
+          energy-adjacent systems—using quantitative methods to understand oceans,
+          ecosystems, materials, and resource flows.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#">View CV</a>
+          <a class="button button-ghost" href="#projects">View Projects</a>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <h3>Current focus</h3>
+        <ul>
+          <li>Ocean thermal memory and climate time series</li>
+          <li>Kelp ecosystem resilience and trophic dynamics</li>
+          <li>Environmental genomics and data visualization</li>
         </ul>
-      </nav>
+      </aside>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <div class="hero-kicker">
-            Data science · ecology · energy &amp; environment
-          </div>
-          <h1 class="hero-title">
-            Modeling <span>living systems</span> in a warming, resource-limited world.
-          </h1>
-          <p class="hero-text">
-            I’m an undergraduate at Northeastern University studying Data Science and
-            Ecology &amp; Evolutionary Biology. I work at the interface of marine
-            ecology, climate, and applied data—whether that’s ocean memory,
-            waste systems, kelp forests, or oyster genomes.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#" target="_blank" rel="noreferrer">
-              View CV (soon)
-            </a>
-            <a class="button button-ghost" href="#projects">
-              Browse research &amp; projects
-            </a>
-          </div>
-        </div>
-
-        <aside class="hero-aside">
-          <h3>Current focus</h3>
-          <p>
-            Building tools and analyses that connect environmental change to
-            real-world decisions—across oceans, ecosystems, and resource systems.
-          </p>
-          <ul>
-            <li>Ocean memory and sea surface temperature timescales</li>
-            <li>Kelp ecosystem resilience and species interactions</li>
-            <li>Genomics of eastern oysters and misassembly detection</li>
-          </ul>
-        </aside>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container two-column">
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m interested in how data-driven analysis can support more sustainable
+          interactions between human systems and the environment. My work spans
+          marine ecology, climate impacts, materials, and genomics, with a particular
+          interest in systems that sit at the boundary of environment and industry.
+        </p>
+        <p>
+          I enjoy translating complex datasets into insights that are useful for
+          research, policy, and applied decision-making.
+        </p>
       </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div>
-          <h2>About</h2>
-          <p>
-            I’m interested in how data and computation can help us design futures
-            that are less extractive and more aligned with ecosystems. My work spans
-            marine ecology, climate-driven change, and genomic structure, often with
-            a focus on coastal systems and species that sit at the boundary of
-            environment and industry.
-          </p>
-          <p>
-            I like projects that combine careful quantitative work with clear
-            communication—whether that’s a time series model, a synteny plot, or a
-            written review that makes complex systems feel legible.
-          </p>
-        </div>
-        <div class="surface-soft">
-          <h3>Keywords</h3>
-          <div class="tag-row">
-            <span class="tag">Marine ecology</span>
-            <span class="tag">Climate impacts</span>
-            <span class="tag">Genomics</span>
-            <span class="tag">Time series</span>
-            <span class="tag">Data visualization</span>
-            <span class="tag">Sustainability</span>
-            <span class="tag">Python / R / SQL</span>
-          </div>
-        </div>
+      <div class="surface-soft">
+        <p><strong>Methods & tools</strong></p>
+        <p>Python · R · SQL · Time series · Statistical modeling · Visualization</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Selected projects</h2>
-          <p class="page-subtitle">
-            A sample of research, course work, and independent projects across oceans,
-            waste systems, kelp forests, materials, and genomics.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Ocean Memory -->
-          <article class="surface project-card">
-            <div class="project-meta">Climate · Time series</div>
-            <h3>Ocean Memory Timescale Analysis</h3>
-            <p>
-              Analyzed CESM1 high-resolution daily sea surface temperature (SST)
-              data (1980–2020) with Python/xarray to estimate ocean thermal memory
-              timescales via detrending and autoregressive modeling.
-            </p>
-            <a class="pill-link" href="project-ocean-memory.html">
-              View project →
-            </a>
-          </article>
-
-          <!-- Global Waste -->
-          <article class="surface project-card">
-            <div class="project-meta">Systems · Waste &amp; policy</div>
-            <h3>Global Waste Analysis</h3>
-            <p>
-              Used Python to relate country-level GDP, population, and waste
-              composition to municipal solid waste generation, highlighting
-              macro-scale drivers of waste and implications for policy.
-            </p>
-            <a class="pill-link" href="project-global-waste.html">
-              View project →
-            </a>
-          </article>
-
-          <!-- Tasmania kelp -->
-          <article class="surface project-card">
-            <div class="project-meta">Marine ecology · Resilience</div>
-            <h3>Kelp Ecosystem Depletion in Tasmania</h3>
-            <p>
-              Synthesized climate and trophic impacts on kelp forests along
-              Tasmania’s east coast, evaluating urchin control and lobster
-              translocation as restoration strategies using large-scale datasets.
-            </p>
-            <a class="pill-link" href="project-tasmania-kelp.html">
-              View project →
-            </a>
-          </article>
-
-          <!-- PLA -->
-          <article class="surface project-card">
-            <div class="project-meta">Materials · Green chemistry</div>
-            <h3>Polylactic Acid Degradation</h3>
-            <p>
-              Hands-on green chemistry experiment testing how temperature affects
-              chemical recycling of PLA in ethanol–NaOH solutions, using
-              colorimetry to track lactic acid production.
-            </p>
-            <a class="pill-link" href="project-pla-degradation.html">
-              View project →
-            </a>
-          </article>
-
-          <!-- Pichia pastoris -->
-          <article class="surface project-card">
-            <div class="project-meta">Bioprocess · Microbiology</div>
-            <h3>Pichia pastoris Biomass &amp; Glucose</h3>
-            <p>
-              Investigated how varying glucose concentrations (2–30%) influence
-              biomass yield of <em>Pichia pastoris</em>, revealing growth
-              inhibition at high concentrations.
-            </p>
-            <a class="pill-link" href="project-pichia-biomass.html">
-              View project →
-            </a>
-          </article>
-
-          <!-- Oyster genome -->
-          <article class="surface project-card">
-            <div class="project-meta">Genomics · Visualization</div>
-            <h3>Eastern Oyster Genome Misassembly</h3>
-            <p>
-              Developed Python workflows and visualizations (synteny, Circos,
-              Sankey) to compare linkage maps to genome scaffolds and flag
-              potential misassemblies in <em>Crassostrea virginica</em>.
-            </p>
-            <a class="pill-link" href="project-oyster-genome.html">
-              View project →
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container two-column">
-        <div>
-          <h2>Contact</h2>
-          <p>
-            I’m always happy to talk about marine science, data, or potential
-            collaborations across climate, ecology, and sustainability.
-          </p>
-        </div>
-        <div class="surface-soft">
-          <ul class="contact-list">
-            <!-- TODO: update these to your actual links -->
-            <li>
-              Email:
-              <a href="mailto:your.email@northeastern.edu">
-                your.email@northeastern.edu
-              </a>
-            </li>
-            <li>
-              LinkedIn:
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                linkedin.com/in/your-profile
-              </a>
-            </li>
-            <li>
-              GitHub:
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                github.com/your-username
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
     <div class="container">
-      © <span id="year"></span> Ranya Jain
-    </div>
-  </footer>
+      <h2>Selected Projects</h2>
 
-  <script>
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-  </script>
+      <div class="projects-grid">
+        <article class="surface project-card">
+          <div class="project-meta">Climate · Time series</div>
+          <h3>Ocean Memory Timescale Analysis</h3>
+          <p>
+            Estimated thermal memory timescales from CESM1 daily SST data
+            (1980–2020) using detrending and autoregressive modeling.
+          </p>
+          <a class="pill-link" href="project-ocean-memory.html">View project</a>
+        </article>
+
+        <article class="surface project-card">
+          <div class="project-meta">Systems · Waste</div>
+          <h3>Global Waste Analysis</h3>
+          <p>
+            Analyzed relationships between GDP, population, and waste generation
+            to identify national-scale drivers of municipal solid waste.
+          </p>
+          <a class="pill-link" href="project-global-waste.html">View project</a>
+        </article>
+
+        <article class="surface project-card">
+          <div class="project-meta">Marine ecology</div>
+          <h3>Kelp Ecosystem Depletion in Tasmania</h3>
+          <p>
+            Evaluated climate-driven kelp loss and restoration strategies using
+            ecological datasets and trophic interaction analysis.
+          </p>
+          <a class="pill-link" href="project-tasmania-kelp.html">View project</a>
+        </article>
+
+        <article class="surface project-card">
+          <div class="project-meta">Materials · Chemistry</div>
+          <h3>Polylactic Acid Degradation</h3>
+          <p>
+            Investigated temperature-dependent chemical recycling of PLA using
+            colorimetric analysis in a green chemistry context.
+          </p>
+          <a class="pill-link" href="project-pla-degradation.html">View project</a>
+        </article>
+
+        <article class="surface project-card">
+          <div class="project-meta">Genomics · Visualization</div>
+          <h3>Eastern Oyster Genome Misassembly</h3>
+          <p>
+            Built synteny and network-style visualizations to identify structural
+            issues in oyster genome assemblies.
+          </p>
+          <a class="pill-link" href="project-oyster-genome.html">View project</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container two-column">
+      <div>
+        <h2>Contact</h2>
+        <p>
+          I’m always open to conversations around environmental data, climate,
+          and energy-focused research.
+        </p>
+      </div>
+      <div class="surface-soft">
+        <p>Email: your.email@northeastern.edu</p>
+        <p>GitHub: github.com/your-username</p>
+        <p>LinkedIn: linkedin.com/in/your-profile</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  © <span id="year"></span> Ranya Jain
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
