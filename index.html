@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranya Jain | Energy, Environment & Data Systems</title>
+  <title>Ranya Jain | Data Science, Ecology & Environmental Systems</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
   <div class="container nav-inner">
     <a href="index.html" class="brand">Ranya Jain</a>
     <nav>
-      <ul class="nav-links">
+      <ul class=" nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -36,30 +36,39 @@
     <div class="container hero-inner">
       <div>
         <div class="hero-kicker">
-          Data science · energy · environmental systems
+          Data science · ecology · sustainability
         </div>
         <h1 class="hero-title">
-          Quantifying <span style="color:var(--accent-strong)">complex systems</span>
-          at the intersection of climate, ecology, and data.
+          Using data to understand how environmental and resource systems respond to change.
         </h1>
         <p class="hero-text">
-          I’m an undergraduate at Northeastern University studying Data Science and
-          Ecology &amp; Evolutionary Biology. My work focuses on environmental and
-          energy-adjacent systems—using quantitative methods to understand oceans,
-          ecosystems, materials, and resource flows.
+          I’m an undergraduate at Northeastern University studying Data Science and Ecology &amp;
+          Evolutionary Biology. Most of my work so far has focused on environmental questions —
+          ocean temperature variability, kelp forest decline, waste generation, and genomic structure —
+          and how to make sense of these systems using data.
+        </p>
+        <p class="hero-text">
+          I’m currently looking for data analyst–type co-op roles where I can contribute to cleaning,
+          exploring, and visualizing real-world datasets, especially in environmental, energy, or
+          sustainability-focused teams.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#">View CV</a>
-          <a class="button button-ghost" href="#projects">View Projects</a>
+          <!-- Update this href to your actual resume file or external link -->
+          <a class="button button-primary" href="Ranya_Jain_Resume.pdf" target="_blank" rel="noreferrer">
+            View resume
+          </a>
+          <a class="button button-ghost" href="#projects">
+            View projects
+          </a>
         </div>
       </div>
 
       <aside class="hero-aside">
         <h3>Current focus</h3>
         <ul>
-          <li>Ocean thermal memory and climate time series</li>
-          <li>Kelp ecosystem resilience and trophic dynamics</li>
-          <li>Environmental genomics and data visualization</li>
+          <li>Building data analysis skills in Python (pandas, xarray, visualization) and R</li>
+          <li>Working with environmental and ecological datasets (time series, spatial, genomic)</li>
+          <li>Exploring how data supports decisions in energy, sustainability, and resource management</li>
         </ul>
       </aside>
     </div>
@@ -71,19 +80,29 @@
       <div>
         <h2>About</h2>
         <p>
-          I’m interested in how data-driven analysis can support more sustainable
-          interactions between human systems and the environment. My work spans
-          marine ecology, climate impacts, materials, and genomics, with a particular
-          interest in systems that sit at the boundary of environment and industry.
+          I’ve been interested in marine and environmental science for a long time, but I realized early on
+          that many of the questions I care about come down to patterns in data: how conditions change over
+          time, how species respond, and where systems start to break down.
         </p>
         <p>
-          I enjoy translating complex datasets into insights that are useful for
-          research, policy, and applied decision-making.
+          That’s what led me to combine Data Science with Ecology &amp; Evolutionary Biology. Through
+          coursework, independent projects, and lab experience, I’ve worked with climate and ocean time
+          series, ecological survey data, waste and socio-economic indicators, and genomic information.
+          Across these projects, I’ve been building a foundation in data cleaning, exploratory analysis,
+          basic statistical modeling, and communicating results clearly.
+        </p>
+        <p>
+          Going forward, I’m interested in using these skills in applied settings — for example on teams
+          working on energy, climate, or sustainability problems — while continuing to grow technically and
+          learn from people with deeper industry experience.
         </p>
       </div>
       <div class="surface-soft">
-        <p><strong>Methods & tools</strong></p>
-        <p>Python · R · SQL · Time series · Statistical modeling · Visualization</p>
+        <p><strong>Some tools and methods I’ve used</strong></p>
+        <p>
+          Python (pandas, xarray, matplotlib), R, basic SQL, time series summaries, simple autoregressive
+          models, correlation analysis, and data visualization for reports and presentations.
+        </p>
       </div>
     </div>
   </section>
@@ -91,58 +110,101 @@
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Selected Projects</h2>
+      <h2>Selected projects</h2>
+      <p class="page-subtitle">
+        A sample of research and course projects where I’ve used data to explore environmental and
+        systems-focused questions. Each project links to a short write-up with more detail.
+      </p>
 
       <div class="projects-grid">
+
+        <!-- Ocean Memory -->
         <article class="surface project-card">
           <div class="project-meta">Climate · Time series</div>
           <h3>Ocean Memory Timescale Analysis</h3>
           <p>
-            Estimated thermal memory timescales from CESM1 daily SST data
-            (1980–2020) using detrending and autoregressive modeling.
+            Analyzed CESM1 daily sea surface temperature data (1980–2020) using Python and xarray to
+            estimate ocean “memory” — how long temperature anomalies persist. This involved detrending
+            time series, fitting simple autoregressive models, and summarizing results across regions.
           </p>
-          <a class="pill-link" href="project-ocean-memory.html">View project</a>
+          <a class="pill-link" href="project-ocean-memory.html">
+            View project
+          </a>
         </article>
 
+        <!-- Global Waste -->
         <article class="surface project-card">
-          <div class="project-meta">Systems · Waste</div>
+          <div class="project-meta">Systems · Waste &amp; policy</div>
           <h3>Global Waste Analysis</h3>
           <p>
-            Analyzed relationships between GDP, population, and waste generation
-            to identify national-scale drivers of municipal solid waste.
+            Explored country-level data on GDP, population, waste composition, and municipal solid waste
+            generation. Cleaned and joined datasets in Python, created descriptive plots, and looked for
+            broad patterns and correlations to understand what drives differences in waste output.
           </p>
-          <a class="pill-link" href="project-global-waste.html">View project</a>
+          <a class="pill-link" href="project-global-waste.html">
+            View project
+          </a>
         </article>
 
+        <!-- Tasmania kelp -->
         <article class="surface project-card">
-          <div class="project-meta">Marine ecology</div>
+          <div class="project-meta">Marine ecology · Resilience</div>
           <h3>Kelp Ecosystem Depletion in Tasmania</h3>
           <p>
-            Evaluated climate-driven kelp loss and restoration strategies using
-            ecological datasets and trophic interaction analysis.
+            Reviewed ecological and climate data on kelp forests, sea urchins, and lobsters along
+            Tasmania’s east coast. Used summary statistics and correlation analysis to compare different
+            management approaches (urchin control, predator translocation) and their potential to support
+            kelp recovery under ongoing climate stress.
           </p>
-          <a class="pill-link" href="project-tasmania-kelp.html">View project</a>
+          <a class="pill-link" href="project-tasmania-kelp.html">
+            View project
+          </a>
         </article>
 
+        <!-- PLA -->
         <article class="surface project-card">
-          <div class="project-meta">Materials · Chemistry</div>
+          <div class="project-meta">Materials · Green chemistry</div>
           <h3>Polylactic Acid Degradation</h3>
           <p>
-            Investigated temperature-dependent chemical recycling of PLA using
-            colorimetric analysis in a green chemistry context.
+            Designed and ran a small experiment on how temperature affects chemical recycling of PLA in
+            ethanol–NaOH solutions. Collected and organized absorbance data, compared conditions across
+            temperatures, and reflected on experimental limitations and what they mean for interpreting
+            results.
           </p>
-          <a class="pill-link" href="project-pla-degradation.html">View project</a>
+          <a class="pill-link" href="project-pla-degradation.html">
+            View project
+          </a>
         </article>
 
+        <!-- Pichia pastoris (if you add a page later, link it) -->
+        <article class="surface project-card">
+          <div class="project-meta">Bioprocess · Microbiology</div>
+          <h3>Pichia pastoris Biomass &amp; Glucose</h3>
+          <p>
+            Investigated how different glucose concentrations influence biomass yield of
+            <em>Pichia pastoris</em> using optical density (OD600) measurements. Organized time series
+            data, compared growth across treatments, and interpreted why very high glucose levels can
+            become limiting instead of beneficial.
+          </p>
+          <a class="pill-link" href="project-pichia-biomass.html">
+            View project
+          </a>
+        </article>
+
+        <!-- Oyster genome -->
         <article class="surface project-card">
           <div class="project-meta">Genomics · Visualization</div>
           <h3>Eastern Oyster Genome Misassembly</h3>
           <p>
-            Built synteny and network-style visualizations to identify structural
-            issues in oyster genome assemblies.
+            Worked with linkage map positions and genome scaffolds to generate synteny-style
+            visualizations in Python and other tools. Used these plots to flag potential misassemblies
+            and highlight regions that may need further curation in the eastern oyster genome.
           </p>
-          <a class="pill-link" href="project-oyster-genome.html">View project</a>
+          <a class="pill-link" href="project-oyster-genome.html">
+            View project
+          </a>
         </article>
+
       </div>
     </div>
   </section>
@@ -153,14 +215,31 @@
       <div>
         <h2>Contact</h2>
         <p>
-          I’m always open to conversations around environmental data, climate,
-          and energy-focused research.
+          I’m interested in data analyst and research-focused roles related to environment, climate,
+          energy, or sustainability. If you think my background might be a good fit for your team, I’d
+          be happy to connect.
         </p>
       </div>
       <div class="surface-soft">
-        <p>Email: your.email@northeastern.edu</p>
-        <p>GitHub: github.com/your-username</p>
-        <p>LinkedIn: linkedin.com/in/your-profile</p>
+        <p>
+          Email:
+          <!-- update to your actual email -->
+          <a href="mailto:your.email@northeastern.edu">your.email@northeastern.edu</a>
+        </p>
+        <p>
+          LinkedIn:
+          <!-- update to your actual LinkedIn -->
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            linkedin.com/in/your-profile
+          </a>
+        </p>
+        <p>
+          GitHub:
+          <!-- update to your actual GitHub -->
+          <a href="https://github.com" target="_blank" rel="noreferrer">
+            github.com/your-username
+          </a>
+        </p>
       </div>
     </div>
   </section>
