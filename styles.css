@@ -1,3 +1,9 @@
+/* =========================================================
+   ENERGY + ENVIRONMENT + DATA PORTFOLIO
+   Headings/UI: Space Grotesk
+   Body: Lato
+   ========================================================= */
+
 :root {
   --bg-main: #f7f9f8;
   --bg-alt: #eef3f1;
@@ -137,7 +143,11 @@ h4 {
 
 .hero {
   background:
-    linear-gradient(115deg, rgba(14, 165, 164, 0.15), rgba(8, 145, 178, 0.03)),
+    linear-gradient(
+      115deg,
+      rgba(15, 118, 110, 0.14),
+      rgba(14, 165, 164, 0.04)
+    ),
     var(--bg-hero);
   border-bottom: 1px solid var(--border-subtle);
   padding: 4rem 0 3.2rem;
@@ -171,6 +181,8 @@ h4 {
   gap: 0.9rem;
 }
 
+/* ===== HERO ASIDE (SAGE / SEA-GREEN) ===== */
+
 .hero-aside {
   background: linear-gradient(
     135deg,
@@ -188,7 +200,7 @@ h4 {
   font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--text-soft);
+  color: var(--accent-strong);
   margin-bottom: 0.6rem;
 }
 
@@ -212,7 +224,7 @@ h4 {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #0ea5a4, #0891b2);
+  background: linear-gradient(135deg, #0ea5a4, #0f766e);
   color: #ecfeff;
   box-shadow: 0 10px 26px rgba(8, 47, 73, 0.35);
 }
