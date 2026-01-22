@@ -172,8 +172,12 @@ h4 {
 }
 
 .hero-aside {
-  background: var(--surface);
-  border: 1px solid var(--border-subtle);
+  background: linear-gradient(
+    135deg,
+    #e7f2ee,
+    #dbeae4
+  );
+  border: 1px solid rgba(15, 118, 110, 0.35);
   border-radius: var(--radius-xl);
   padding: 1.6rem 1.7rem;
   box-shadow: var(--shadow-soft);
