@@ -295,6 +295,74 @@ h4 {
   color: var(--text-soft);
   text-align: center;
 }
+/* ===== Project Pages (match global palette) ===== */
+
+.page-hero {
+  padding: 2.8rem 0 1.6rem;
+  background:
+    linear-gradient(
+      to right,
+      rgba(15, 118, 110, 0.18),
+      transparent 45%
+    ),
+    var(--bg-main);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.page-hero h1 {
+  margin-bottom: 0.4rem;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3.3fr) minmax(0, 2.1fr);
+  gap: 2rem;
+  margin-top: 1.6rem;
+}
+
+.meta-block {
+  background: linear-gradient(135deg, var(--surface-soft), var(--bg-alt));
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  padding: 1.4rem 1.6rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.meta-block h3 {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meta-list li {
+  margin-bottom: 0.3rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
 
 /* ===== Responsive ===== */
 
