@@ -347,11 +347,11 @@ h4 {
 .meta-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0.5;
 }
 
 .meta-list li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .back-link {
