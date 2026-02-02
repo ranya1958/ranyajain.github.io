@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volunteering & Community Work | Ranya Jain</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="project-page">
+  <!-- solid nav like project pages -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP: overview + details -->
+    <section class="project-hero">
+      <div class="container project-layout">
+        <!-- LEFT: narrative -->
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> · <span>Volunteering</span>
+          </div>
+
+          <h1>Volunteering &amp; Community Work</h1>
+
+          <p class="project-meta">
+            Conservation · Mentoring · Science outreach
+          </p>
+
+          <div class="project-body">
+            <p>
+              Outside of coursework and research, I care a lot about how science
+              and environmental issues show up in everyday life. Most of my
+              volunteering revolves around conservation work, mentoring students,
+              and helping make science feel more accessible and less intimidating.
+            </p>
+
+            <p>
+              In high school, I founded a marine conservation club and helped
+              organize mangrove planting and monitoring events in the UAE,
+              partnering with local environmental groups. More recently, I’ve
+              volunteered as a pen pal with Letters to a Pre-Scientist and
+              with student-facing programs that support first-generation and
+              underrepresented students navigating STEM pathways.
+            </p>
+
+            <p>
+              These experiences have shaped how I think about “impact”: not
+              just doing analysis or producing results, but building spaces where
+              people feel invited into science and where environmental work is
+              grounded in real communities.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: structured bullets + links -->
+        <aside class="project-aside">
+          <div class="meta-block">
+            <h3>Selected roles</h3>
+            <ul>
+              <li>
+                Founder, high school marine conservation club – organized mangrove
+                plantation and monitoring events with local NGOs.
+              </li>
+              <li>
+                Volunteer, coastal restoration and marine education events
+                focused on habitat health and stewardship.
+              </li>
+              <li>
+                Letters to a Pre-Scientist – long-term pen pal, writing about
+                marine biology, data, and what science looks like day to day.
+              </li>
+              <li>
+                Student mentoring and outreach – helping younger students think
+                through classes, applications, and finding their place in STEM.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <p>
+              More detail and timelines are available on my
+              <a
+                href="https://www.linkedin.com/in/ranya-jain-7480a030b/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn profile
+              </a>.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
