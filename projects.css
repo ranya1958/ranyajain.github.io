@@ -1,10 +1,3 @@
-/* =========================================================
-   PROJECT PAGES
-   Shared layout + styling for individual project subpages
-   Uses variables + base styles from styles.css
-   ========================================================= */
-
-/* Make space under the fixed header on project pages */
 .project-page main {
   padding-top: 0rem; /* tune this if nav overlap/gap still feels off */
 }
