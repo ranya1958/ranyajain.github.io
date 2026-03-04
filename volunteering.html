@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volunteering & Outreach | Ranya Jain</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="photos.css" />
+  <link rel="stylesheet" href="projects.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- solid header on subpage -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <!-- if you kept the mobile button, it will be hidden on desktop by your CSS -->
+        <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="volunteering.html">Volunteering</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP HERO / SUMMARY -->
+    <section class="vol-hero">
+      <div class="container vol-layout">
+        <div>
+          <p class="project-meta">Community · mentoring · conservation</p>
+          <h1>Volunteering & outreach</h1>
+          <p class="vol-intro">
+            Outside of coursework and research, I care a lot about making science feel less
+            distant and more accessible—especially for students who don’t always see
+            themselves represented in STEM, and for coastal ecosystems that are usually
+            out of sight and out of mind.
+          </p>
+          <p class="vol-intro">
+            A lot of this has looked like slow, unglamorous work: writing letters, planting
+            saplings, cleaning up shorelines, and helping younger students connect school
+            science to real ecosystems.
+          </p>
+          <div class="vol-tags">
+            <span>STEM mentoring</span>
+            <span>Marine & coastal</span>
+            <span>Science communication</span>
+          </div>
+        </div>
+
+        <!-- highlight card on the right -->
+        <aside class="vol-highlight">
+          <h2>What this work has taught me</h2>
+          <ul>
+            <li>How to explain technical ideas without losing nuance.</li>
+            <br>
+            <li>That small, local projects still matter for climate and oceans.</li>
+            <br>
+            <li>How much younger students light up when science feels like theirs.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- INDIVIDUAL ROLES -->
+    <section class="section">
+      <div class="container">
+        <div class="vol-list">
+
+          <!-- Letters to a Pre-Scientist -->
+          <article class="vol-card">
+            <div class="vol-card-header">
+              <div>
+                <h3>Letters to a Pre-Scientist</h3>
+                <p class="vol-org">STEM pen-pal mentoring program</p>
+              </div>
+              <p class="vol-meta">Remote · 2024–present</p>
+            </div>
+            <p class="vol-text">
+              I write letters to a middle-school student about science, university life,
+              and what it’s like to study oceans and data. We talk about everything from
+              parrotfish and whale sharks to what research actually looks like day-to-day.
+            </p>
+            <ul class="vol-bullets">
+              <li>Demystify STEM paths and share honest snapshots of university life.</li>
+              <li>Explain marine biology and data science concepts in accessible ways.</li>
+              <li>Encourage curiosity, questions, and a sense that science is “for them.”</li>
+            </ul>
+          </article>
+
+          <!-- Blue Crew / Marine conservation club work -->
+          <article class="vol-card">
+            <div class="vol-card-header">
+              <div>
+                <h3>Marine conservation events</h3>
+                <p class="vol-org">Blue Crew & local partners</p>
+              </div>
+              <p class="vol-meta">UAE · 2022–2024</p>
+            </div>
+            <p class="vol-text">
+              Through the marine conservation club I founded in high school, I helped
+              organize mangrove planting and monitoring days, as well as shoreline clean-ups
+              with local environmental groups.
+            </p>
+            <ul class="vol-bullets">
+              <li>Coordinated student volunteers for mangrove planting and monitoring.</li>
+              <li>Worked with local partners on logistics, safety, and site selection.</li>
+              <li>Explained why habitats like mangroves matter for climate resilience.</li>
+            </ul>
+          </article>
+
+          <!-- Outreach / science sharing -->
+          <article class="vol-card">
+            <div class="vol-card-header">
+              <div>
+                <h3>Science outreach & peer support</h3>
+                <p class="vol-org">Campus & community spaces</p>
+              </div>
+              <p class="vol-meta">Ongoing</p>
+            </div>
+            <p class="vol-text">
+              I look for small ways to make science feel more collaborative—helping friends
+              debug code, sharing research experiences with younger students, or talking
+              through project ideas with people who are just starting to explore STEM.
+            </p>
+            <ul class="vol-bullets">
+              <li>Support peers with statistics, coding, and data-cleaning questions.</li>
+              <li>Share application and research tips with students a step behind me.</li>
+              <li>Help connect environmental science topics to real-world examples.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav toggle (relies on your .nav-toggle / .nav-links CSS)
+    const navToggle = document.querySelector(".nav-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+    }
+
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
