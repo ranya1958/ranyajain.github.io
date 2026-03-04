@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Waste Analysis | Ranya Jain</title>
+
+  <!-- Base + project styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+
+  <!-- Lato (body); Satoshi is from your other include on index -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="project-page">
+  <!-- Solid nav on project pages -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP SECTION: TITLE + TEXT + DETAILS -->
+    <section class="project-hero">
+      <div class="container project-layout">
+        <!-- LEFT: main narrative -->
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#projects">Projects</a> ·
+            <span>Global Waste Analysis</span>
+          </div>
+
+          <h1>Global Waste Analysis</h1>
+
+          <p class="project-meta">
+            Country-level waste, GDP, population, and composition · Python
+          </p>
+
+          <div class="project-body">
+            <p>
+              In this project, I analyzed country-level data on GDP, population,
+              waste composition, and municipal solid waste (MSW) generation to
+              identify key correlations and national-scale drivers of waste output.
+            </p>
+            <p>
+              Using Python, I explored how economic growth, demographic patterns,
+              and material composition interact with total waste generation. The
+              goal was not just to find correlations, but to understand how
+              structural factors might inform better waste policy frameworks,
+              especially in rapidly urbanizing regions.
+            </p>
+            <p>
+              Working with this dataset pushed me to think critically about
+              confounding variables, uneven data quality across countries, and the
+              difference between a visually nice plot and a result that actually
+              makes sense in a policy context.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: project details + links (no iframe here) -->
+        <aside class="project-aside">
+          <div class="meta-block">
+            <h3>Project details</h3>
+            <ul>
+              <li>Variables: GDP, population, MSW generation, waste composition</li>
+              <li>Tools: Python (pandas, seaborn/matplotlib)</li>
+              <li>Focus: national-scale drivers and policy implications</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <p>View the full report and slides:</p>
+            <ul>
+              <li>
+                <a href="docs/Report_Global_MSW_Analysis.pdf"
+                   target="_blank" rel="noreferrer">
+                  Report – Global MSW Analysis (PDF)
+                </a>
+              </li>
+              <li>
+                <a href="docs/Presentation_MSW_Analysis.pdf"
+                   target="_blank" rel="noreferrer">
+                  Presentation – Summary slides (PDF)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BOTTOM SECTION: FULL-WIDTH PDF EMBED(S) -->
+    <section class="project-resources">
+      <div class="container">
+        <h2>Report</h2>
+        <p class="resources-intro">
+          Embedded below is the full presentation and written report for this analysis.
+        </p>
+
+        <div class="embed-frame">
+
+          <iframe
+            src="docs/Presentation_MSW_Analysis.pdf"
+            title="Global MSW Analysis Presentation"
+            loading="lazy"
+          ></iframe>
+          <br> <br>
+          <iframe
+            src="docs/Report_Global_MSW_Analysis.pdf"
+            title="Global MSW Analysis Report"
+            loading="lazy"
+          ></iframe>
+
+        </div>
+
+        <!-- If you want to embed slides too, uncomment this:
+        <h2>Slides</h2>
+        <p class="resources-intro">
+          A condensed slide version of the main findings.
+        </p>
+        <div class="embed-frame">
+          <iframe
+            src="docs/Presentation_MSW_Analysis.pdf"
+            title="Global MSW Analysis Slides"
+            loading="lazy"
+          ></iframe>
+        </div>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

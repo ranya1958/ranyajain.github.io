@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Effect of Temperature on Chemical Recycling of PLA | Ranya Jain</title>
+
+  <!-- Global + project styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+
+  <!-- Lato body font (headings use Satoshi from main site) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="project-page">
+  <!-- Solid nav bar on project pages -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP SECTION: TITLE + TEXT + DETAILS -->
+    <section class="project-hero">
+      <div class="container project-layout">
+        <!-- LEFT: main narrative -->
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#projects">Projects</a> ·
+            <span>PLA Chemical Recycling</span>
+          </div>
+
+          <h1>Effect of Temperature on Chemical Recycling of Polylactic Acid</h1>
+
+          <p class="project-meta">
+            PLA hydrolysis · Colorimetry · Beer–Lambert law
+          </p>
+
+          <div class="project-body">
+            <p>
+              In this exploration, I investigated how temperature affects the chemical
+              recycling of polylactic acid (PLA) in a 50% ethanol–NaOH solution by
+              measuring lactic acid production at different temperatures. After hydrolysis, 
+              lactic acid was complexed with iron(III) chloride and quantified using a 
+              colorimeter and the Beer–Lambert law.
+            </p>
+            <p>
+              Across the tested range, lactic acid concentration increased with
+              temperature. Overall, this project strengthened my understanding of polymer
+              degradation, experimental design, and how to connect lab-scale reaction
+              conditions to questions about greener plastics and end-of-life
+              options for biodegradable materials.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: project details + links -->
+        <aside class="project-aside">
+          <div class="meta-block">
+            <h3>Project details</h3>
+            <ul>
+              <li>Focus: hydrolysis of PLA in 50% ethanol–NaOH</li>
+              <li>
+                Methods: colorimetry, calibration curve, Beer–Lambert law,
+                uncertainty propagation
+              </li>
+              <li>
+                Themes: green chemistry, biodegradable polymers, experimental
+                limitations in real lab settings
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <p>View the full write-up:</p>
+            <ul>
+              <li>
+                <a
+                  href="docs/Ranya_Jain_PLA_Exploration.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Effect of Temperature on Chemical Recycling of Polylactic Acid (PDF)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BOTTOM SECTION: FULL-WIDTH PDF EMBED -->
+    <section class="project-resources">
+      <div class="container">
+        <h2>Report</h2>
+        <p class="resources-intro">
+          Embedded below is the full report, including background on PLA and
+          hydrolysis, calibration and data tables, uncertainty analysis, and
+          evaluation of errors and future extensions.
+        </p>
+
+        <div class="embed-frame">
+          <iframe
+            src="docs/Ranya_Jain_PLA_Exploration.pdf"
+            title="Effect of Temperature on Chemical Recycling of PLA – Report"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitFlow: Health &amp; Fitness Platform | Ranya Jain</title>
+
+  <!-- Base + project styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+
+  <!-- Lato (body); Satoshi comes from your main site setup -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="project-page">
+  <!-- Solid nav on project pages -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP SECTION: TITLE + TEXT + DETAILS -->
+    <section class="project-hero">
+      <div class="container project-layout">
+        <!-- LEFT: main narrative -->
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#projects">Projects</a> ·
+            <span>FitFlow</span>
+          </div>
+
+          <h1>FitFlow: Health &amp; Fitness Platform</h1>
+
+          <p class="project-meta">
+            Full-stack web app · MySQL schema · Flask API · Streamlit prototype
+          </p>
+
+          <div class="project-body">
+            <p>
+              FitFlow is a health and fitness platform designed to connect clients,
+              trainers, analysts, and system administrators in one system. Instead
+              of scattered spreadsheets and ad-hoc messages, it provides a structured
+              way to manage workouts, programs, and health data end to end.
+            </p>
+            <p>
+              Our team started from the database layer up: defining user personas,
+              creating localized and global ER diagrams, and designing a relational
+              schema that supports role-based access. We implemented the schema with
+              SQL DDL, generated realistic sample data, and wrote core queries for
+              each role to answer questions about progress, usage, and system health.
+            </p>
+            <p>
+              On top of the database, we designed a REST API and built a prototype
+              using Flask and Streamlit. The app lets admins manage accounts and
+              backups, trainers assign and monitor programs, clients log workouts
+              and view streaks, and analysts explore trends in health metrics.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: project details + links -->
+        <aside class="project-aside">
+          <div class="meta-block">
+            <h3>Project details</h3>
+            <ul>
+              <li>Course: CS3200 – Database Design</li>
+              <li>Role: schema design, SQL DDL, core queries, API matrix</li>
+              <li>Tech: MySQL, SQL, Flask API, Streamlit UI</li>
+              <li>Focus: multi-role fitness system (admin, trainer, analyst, client)</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <p>Explore the codebase, documentation, and demo:</p>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/ranya1958/FitFlow"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub repository – schema, API, and prototype
+                </a>
+                <br>
+              </li>
+              <br>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=kRvscEVxQec"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  4-minute FitFlow walkthrough (YouTube)
+                </a>
+              </li>
+              <br>
+              <li>
+                <a
+                  href="docs/FitFlow - Project Phase 1_2_3.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Full project document – personas, ERDs, SQL, wireframes (PDF)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="project-resources">
+      <div class="container">
+        <h2>Project documentation</h2>
+        <p class="resources-intro">
+          The report below walks through user personas, wireframes, ER diagrams,
+          relational schema, example queries, and finalized SQL DDL for the FitFlow
+          system.
+        </p>
+
+        <div class="embed-frame">
+          <iframe
+            src="docs/FitFlow - Project Phase 1_2_3.pdf"
+            title="FitFlow Project Documentation"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

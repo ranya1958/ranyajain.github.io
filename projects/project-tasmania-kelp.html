@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelp Ecosystem Depletion – East Tasmania | Ranya Jain</title>
+
+  <!-- Global + project styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
+
+  <!-- Lato body font (headings use Satoshi from main site) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="project-page">
+  <!-- Solid nav bar on project pages -->
+  <header class="site-header scrolled">
+    <div class="container nav-inner">
+      <div class="brand">Ranya&nbsp;Jain</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- TOP SECTION: TITLE + TEXT + DETAILS -->
+    <section class="project-hero">
+      <div class="container project-layout">
+        <!-- LEFT: main narrative -->
+        <div>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> ·
+            <a href="index.html#projects">Projects</a> ·
+            <span>Kelp Ecosystems – East Tasmania</span>
+          </div>
+
+          <h1>Depletion of Kelp Ecosystems on the East Coast of Tasmania</h1>
+
+          <p class="project-meta">
+            Golden kelp · Long-spined sea urchins · Southern rock lobsters ·
+            Treatment methods &amp; trophic cascades
+          </p>
+
+          <div class="project-body">
+            <p>
+              This project examines how two active management strategies—lobster
+              translocation and abalone smashing (urchin culling)—influence
+              populations of Golden kelp (<em>Ecklonia radiata</em>), long-spined
+              sea urchins (<em>Centrostephanus rodgersii</em>), and southern rock
+              lobsters (<em>Jasus edwardsii</em>) along the east coast of Tasmania
+              over a two-year period.
+            </p>
+            <p>
+              Using secondary belt-transect survey data across treated and control
+              sites, I compressed thousands of observations into a tractable dataset
+              and compared species trajectories under different management regimes.
+              I then used Pearson correlation to quantify how kelp, urchin, and
+              lobster abundances covary across sites and years.
+            </p>
+            <p>
+              The analysis showed a moderate negative correlation between urchins
+              and kelp, and a moderately strong negative correlation between urchins
+              and lobsters, consistent with a trophic cascade where predator loss
+              enables urchin overgrazing. The lobster–kelp relationship was weaker
+              and positive, suggesting that while lobsters benefit from healthy kelp
+              habitat, their dynamics are also shaped by fishing pressure and
+              climate-driven range shifts.
+            </p>
+            <p>
+              Overall, the work highlights that short-term interventions can reduce
+              urchin densities locally, but fully restoring kelp biomass likely
+              requires longer timescales, sustained predator recovery, and
+              complementary management that addresses overfishing and warming-driven
+              urchin expansion.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT: project details + links -->
+        <aside class="project-aside">
+          <div class="meta-block">
+            <h3>Project details</h3>
+            <ul>
+              <li>Location: East coast of Tasmania</li>
+              <li>
+                Species: <em>Ecklonia radiata</em>, <em>Centrostephanus rodgersii</em>,
+                <em>Jasus edwardsii</em>
+              </li>
+              <li>
+                Data: Secondary belt-transect surveys across treatment and control sites
+              </li>
+              <li>
+                Methods: data cleaning &amp; compression, treatment comparisons,
+                Pearson correlation
+              </li>
+              <li>
+                Themes: kelp forest resilience, urchin barrens, fishing pressure,
+                climate impacts
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <p>View the full write-up:</p>
+            <ul>
+              <li>
+                <a
+                  href="docs/Ranya_Jain_Exploration_Kelp_Depletion_East_Tasmania.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Depletion of Kelp Ecosystems on the East Coast of Tasmania (PDF)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BOTTOM SECTION: FULL-WIDTH PDF EMBED -->
+    <section class="project-resources">
+      <div class="container">
+        <h2>Report</h2>
+        <p class="resources-intro">
+          Embedded below is the full report, including background, methods,
+          results, correlation tables, and management implications for kelp
+          ecosystems in eastern Tasmania.
+        </p>
+
+        <div class="embed-frame">
+          <iframe
+            src="docs/Ranya_Jain_Exploration_Kelp_Depletion_East_Tasmania.pdf"
+            title="Depletion of Kelp Ecosystems on the East Coast of Tasmania – Report"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ranya Jain</p>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
